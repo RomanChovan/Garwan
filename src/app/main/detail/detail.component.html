@@ -1,0 +1,34 @@
+<div class="row text-dark">
+  <div class="col-md-6 col-12 text-center">
+    <img class="w-25 m-3 border-info rounded-circle"
+      src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==" />
+  </div>
+  <div class="col-2 d-md-none"></div>
+  <div class="col-md-6 col my-auto text-left p-5">
+    <div class="row">
+      <div class="col-lg-3 col-md-4 col-6"><strong>Name</strong></div>
+      <div class="col-lg-3 col-md-4 col-6">{{ user.name }}</div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 col-md-4 col-6"><strong>Followers</strong></div>
+      <div class="col-lg-3 col-md-4 col-6">{{ user.followers }}</div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 col-md-4 col-6"><strong>Repositories</strong></div>
+      <div class="col-lg-3 col-md-4 col-6">{{ user.repositories }}</div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 col-md-4 col-6"><strong>Create date</strong></div>
+      <div class="col-lg-3 col-md-4 col-6">{{ user.createDate | date }}</div>
+    </div>
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-12 text-center text-dark">
+    <h5>Followers</h5>
+  </div>
+  <div class="col-md-10 col-12 mx-auto">
+    <app-list></app-list>
+  </div>
+</div>

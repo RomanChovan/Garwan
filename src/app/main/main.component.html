@@ -1,0 +1,10 @@
+<div class="row bg-danger">
+  <div class="col text-center text-light p-1">
+    <strong><span class="route" [routerLink]="['/list']">List</span> <span *ngIf="user"> --> <span class="route" [routerLink]="['/detail', user.id]">{{ user.name }}</span></span></strong>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <router-outlet></router-outlet>
+  </div>
+</div>
